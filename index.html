@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEW展示 20016</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #f5f5f7;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding: 3rem 0;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+        
+        .video-section {
+            margin-bottom: 4rem;
+        }
+        
+        .video-container {
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            margin-bottom: 3rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .video-container:hover {
+            transform: translateY(-5px);
+        }
+        
+        .video-title {
+            padding: 1.5rem;
+            font-size: 1.8rem;
+            font-weight: 500;
+            background: linear-gradient(to right, #f8f8f8, white);
+            border-bottom: 1px solid #eee;
+        }
+        
+        .video-frame {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        
+        .video-frame iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 3rem;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .social-button {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 0.8rem 1.5rem;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            border-radius: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .social-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .niconico {
+            background-color: #252525;
+        }
+        
+        .twitter {
+            background-color: #1DA1F2;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 2rem 0;
+            font-size: 0.9rem;
+            color: #888;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .video-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>HEW展示 20016</h1>
+        </header>
+        
+        <div class="video-section">
+            <div class="video-container">
+                <div class="video-title">手記β</div>
+                <div class="video-frame">
+                    <iframe src="https://drive.google.com/file/d/1EI4Uey1tTRHpZLrEwTQry8UXHgct2EDf/preview" 
+                            allow="autoplay" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+            <div class="video-container">
+                <div class="video-title">Re:FlyHigh!</div>
+                <div class="video-frame">
+                    <iframe src="https://drive.google.com/file/d/1gDiFOHc1f4cTURsoN-WihZ672g9p6buY/preview" 
+                            allow="autoplay" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+            <div class="video-container">
+                <div class="video-title">Maybe Melty Day</div>
+                <div class="video-frame">
+                    <iframe src="https://drive.google.com/file/d/1Pob7UWKPc3kGA8Sljdo4qafeOGapwCtn/preview" 
+                            allow="autoplay" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        
+        <div class="social-links">
+            <a href="https://www.nicovideo.jp/user/117315398/video?ref=pc_userpage_menu" target="_blank" class="social-button niconico">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 3H3C1.9 3 1 3.9 1 5V19C1 20.1 1.9 21 3 21H21C22.1 21 23 20.1 23 19V5C23 3.9 22.1 3 21 3Z" stroke="white" stroke-width="2"/>
+                    <line x1="7" y1="8" x2="7" y2="16" stroke="white" stroke-width="2"/>
+                    <line x1="17" y1="8" x2="17" y2="16" stroke="white" stroke-width="2"/>
+                    <line x1="12" y1="8" x2="12" y2="16" stroke="white" stroke-width="2"/>
+                </svg>
+                ニコニコ動画
+            </a>
+            <a href="https://x.com/Sophie_VP01" target="_blank" class="social-button twitter">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23 3.01C22.0424 3.68 20.9821 4.2 19.86 4.54C19.2577 3.84729 18.4573 3.35009 17.567 3.12038C16.6767 2.89067 15.7395 2.93643 14.8821 3.25059C14.0247 3.56475 13.2884 4.13105 12.773 4.8781C12.2575 5.62514 11.9877 6.51657 12 7.43V8.43C10.2426 8.47875 8.50127 8.07535 6.93101 7.26125C5.36074 6.44716 4.01032 5.24805 3 3.79C3 3.79 -1 13 8 17C5.94053 18.398 3.48716 19.0993 1 19C10 24 21 19 21 7.42C20.9991 7.14077 20.9723 6.86245 20.92 6.59C21.9406 5.59931 22.6608 4.35227 23 3.01Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Twitter
+            </a>
+        </div>
+        
+        <footer>
+            <p>© 2025 HEW展示 20016 - All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+</html>
